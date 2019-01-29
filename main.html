@@ -1743,9 +1743,7 @@ aside ul li a:hover {
 <!--POST CONTAINER END-------------------------------------------------->
     
 <!--COPYRIGHT----------------------------------------------------------->
-    <div id="copyright" style="position: fixed; bottom: 0; right: 0; padding: 10px; background: #181818;"><a style="font-family: helvetica; 
-      font-weight: bold;
-      letter-spacing: -1px; color: #fff;" href="https://nonspace.tumblr.com">nonspace.</a></div>
+    <div id="copyright" style="position: fixed; bottom: 0; right: 0; padding: 10px; background: {color:accent}; z-index: 8;"><a style="font-family: helvetica; font-weight: bold; letter-spacing: -1px; color: {color:accent text};" href="https://nonspace.tumblr.com">nonspace.</a></div>
 <!--COPYRIGHT-- END----------------------------------------------------->
   </div>
   <!--container-->
@@ -1769,5 +1767,13 @@ aside ul li a:hover {
 <!--FOOTER END---------------------------------------------------------->
 
 <!--CONTAINER END------------------------------------------------------->
+
+<script>
+    if (typeof window.iExist == 'undefined') {
+      $('#copyright').css({
+          'display' : 'block', 
+      });
+    }
+</script>
 </body>
 </html>
