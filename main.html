@@ -314,10 +314,14 @@ aside {
   bottom: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 100%;
   width: 510px;
   padding: 100px;
+  overflow-y: auto;
+}
+ 
+aside .side_wrap {
+  margin: auto 0; 
 }
 
 /*footer*/
@@ -1401,6 +1405,7 @@ aside ul li a:hover {
       </ul>
     </nav>
     <aside>
+     <div class="side_wrap">
       <!--PAGE TITLE & ICON-->
       <div id="page_title">
         <a href="/">
@@ -1452,6 +1457,7 @@ aside ul li a:hover {
           </li>
           {/block:Iflinkfiveurl}
         </ul>
+     </div>
     </aside>
     
     <div id="search_bar">
