@@ -924,13 +924,15 @@ iframe.photoset {
 .ptags {
   max-width: {select:post width}px; 
   margin: 5px 0; 
-  line-height: 250%; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 } 
 
 .ptags a {
   font-size: calc({text:font size}px - 1px);
   font-family: {text:font two};
-  margin: 0 10px 0 0; 
+  margin: 0 10px 5px 0; 
   color: {color:accent text}; 
   padding: 10px 10px; 
   background: {color:accent}; 
